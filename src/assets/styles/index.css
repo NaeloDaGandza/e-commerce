@@ -1,0 +1,98 @@
+*{
+    color: rgb(0, 128, 255);
+}
+body{
+    background-image: url('/src/img/background.jpg');
+    background-size: cover;
+
+}
+
+.header-div{
+    text-align: center;
+    margin: 0;
+    
+
+}
+.header-div h1{
+    cursor: pointer;
+    text-align: center;
+    margin: 0;
+    
+
+}
+.header-div input{
+    float: right;
+    margin-top: 0;
+
+}
+
+.menubar{
+    text-align: left;
+    border: none;
+    color: red;
+    padding: 0;
+    display: flex;
+    justify-content: left;
+    margin-top: 5px;
+    /* margin-right: 5px; */
+    
+}
+.menubar ul{
+    list-style: none; 
+    display: flex;
+    margin: 0;
+    
+}
+
+.menubar ul li{
+    cursor: pointer;
+    margin: 15px;
+    list-style: none;
+    text-decoration: none;
+}
+
+a:link, a:visited, a:hover, a:active {
+    color: rgb(0, 128, 255);
+    text-decoration: none;
+  }
+  
+.product-card{
+    display: flex;
+}
+
+.product-card div{
+    margin: 2px;
+}
+
+
+.menubar2{
+    text-align: right;
+    border: none;
+    color: rgb(0, 128, 255);
+    padding: 0;
+    display: flex;
+    justify-content: flex-end;
+    margin-top: 5px;
+    /* margin-right: 5px; */
+    
+}
+.menubar2 ul{
+    list-style: none; 
+    display: flex;
+    margin: 0;
+    
+}
+
+.menubar2 ul li{
+    cursor: pointer;
+    margin: 15px;
+    list-style: none;
+    text-decoration: none;
+}
+
+.menubar-signin{
+    display: flex;
+    justify-content: space-between;
+
+
+}
