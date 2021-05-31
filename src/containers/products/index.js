@@ -21,10 +21,10 @@ const Products = () => {
 	}
 
 	return (
-		<div  className = {'product-card'}>
+		<div>
 			{products.map(product => (
 				<div key={product.id}>
-					<img src={product.imageUrl} width='250px' height='250px'/>
+					<img src={product.imageUrl} width='100px' height='100px'/>
 					<h5>{product.title}</h5>
 					<p>{product.description}</p>
 					<button onClick={() => {

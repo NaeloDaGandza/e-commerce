@@ -1,12 +1,10 @@
 import {BrowserRouter as Router, Link, Switch, Route} from 'react-router-dom';
+import CartButton from '../components/tabs/cart-button';
 import ContactUs from './contact-us';
 import Products from './products';
 import AboutUs from './about-us';
+import Cart from './cart';
 import React from 'react';
-import SignUp from './components/singup/Signup';
-import SignIn from './components/signin/SignIn';
-import Account from './components/account/Account';
-
 
 const App = () => {
 
@@ -17,7 +15,6 @@ const App = () => {
                     <h1>E-commerse</h1>
                 </span>
 			</div>
-		<div className ={'menubar-signin'}>
 			<Router>
 				<div>
 					<div className='menubar'>
@@ -31,12 +28,15 @@ const App = () => {
 							<li>
 								<Link to='/contactUs'>Contact us</Link>
 							</li>
+							<li>
+								<CartButton/>
+							</li>
 						</ul>
 					</div>
 
 					<Switch>
 						<Route path='/products'>
-							<Products count={1}/>
+							<Products/>
 						</Route>
 						<Route path='/aboutUs'>
 							<AboutUs/>
@@ -44,39 +44,13 @@ const App = () => {
 						<Route path='/contactUs'>
 							<ContactUs/>
 						</Route>
-					</Switch>
-				</div>
-			</Router>
-			<Router>
-				<div>
-					<div className='menubar2'>
-						<ul>
-							<li>
-								<Link to='/products'>SignIn</Link>
-							</li>
-							<li>
-								<Link to='/aboutUs'>SignUp</Link>
-							</li>
-							<li>
-								<Link to='/contactUs'>Account</Link>
-							</li>
-						</ul>
-					</div>
 
-					<Switch>
-						<Route path='/SignIn'>
-							<SignIn/>
-						</Route>
-						<Route path='/SignUp'>
-							<SignUp/>
-						</Route>
-						<Route path='/Account'>
-							<Account/>
+						<Route path='/cart'>
+							<Cart/>
 						</Route>
 					</Switch>
 				</div>
 			</Router>
-		</div>	
 		</header>
 	)
 }

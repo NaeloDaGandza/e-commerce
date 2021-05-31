@@ -48,6 +48,19 @@ const reducer = (state = initialState, action) => {
 				cartItems
 			};
 		}
+		case actionTypes.DELETE_ITEM_FROM_CART: {
+			const cartItems = Utility.deepClone(state.cartItems);
+			const i = cartItems.findIndex((item) => (item.id === payload.id));
+
+			if (i !== -1) {
+				cartItems.splice(i, 1);
+			}
+
+			return {
+				...state,
+				cartItems
+			};
+		}
 		default: {
 			return state;
 		}
