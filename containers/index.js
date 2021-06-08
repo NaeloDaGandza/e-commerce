@@ -1,28 +1,22 @@
 import {BrowserRouter as Router, Link, Route, Switch, Redirect} from 'react-router-dom';
 import CartButton from '../components/tabs/cart-button';
-import {isLoggedInSelector} from '../store/selectors';
-import Loading from '../components/shared/loading';
-import React, {useEffect, useRef} from 'react';
 import SignIn from './authentication/sign-in';
 import SignUp from './authentication/sign-up';
-import AuthCtrl from '../controllers/auth';
 import ContactUs from './home/contact-us';
-import {useSelector} from 'react-redux';
 import Products from './home/products';
 import AboutUs from './home/about-us';
 import Cart from './home/cart';
+import React, { useEffect } from 'react';
 
 const App = () => {
 
-	const isLoggedIn = useSelector(isLoggedInSelector);
-
+	// TODO: call checkLoginStatus in useEffect
 	useEffect(() => {
-		AuthCtrl.checkLoginStatus();
-	}, []);
-
-	if (isLoggedIn === null) {
-		return (<Loading/>);
+		document.checkLoginStatus()
 	}
+
+	)
+	// TODO: check isLoggedIn and show loading
 
 	return (
 		<header>
@@ -33,34 +27,32 @@ const App = () => {
 			</div>
 			<Router>
 				<div>
-					{isLoggedIn && (
-						<div className='menubar'>
-							<ul>
-								<li>
-									<Link to='/products'>Products</Link>
-								</li>
-								<li>
-									<Link to='/aboutUs'>About us</Link>
-								</li>
-								<li>
-									<Link to='/contactUs'>Contact us</Link>
-								</li>
-								<li>
-									<CartButton/>
-								</li>
-							</ul>
-						</div>
-					)}
+					<div className='menubar'>
+						<ul>
+							<li>
+								<Link to='/products'>Products</Link>
+							</li>
+							<li>
+								<Link to='/aboutUs'>About us</Link>
+							</li>
+							<li>
+								<Link to='/contactUs'>Contact us</Link>
+							</li>
+							<li>
+								<CartButton/>
+							</li>
+						</ul>
+					</div>
 
 					<Switch>
 						<Route
 							exact
 							path='/'
-							render={() => (
-								isLoggedIn ?
+							render={() => {
+								return isLoggedIn ?
 									<Redirect to='/products'/> :
 									<Redirect to='/signIn'/>
-							)}
+							}}
 						/>
 
 						<Route path='/products'>

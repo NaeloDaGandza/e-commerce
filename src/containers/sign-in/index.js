@@ -3,13 +3,20 @@ import React from 'react';
 
 const Index = () => {
 
+    const [login, setLogin] = useState('');
+	const loginFunction = (eventLogin) => setLogin(eventLogin.target.value);
+
+	const [password, setPassword] = useState('');
+	const passwordFunction = (eventPassword) => setPassword(eventPassword.target.value);
+
+	
 
 
     return(
         <div>
-            <span>Login: <input></input></span> <br/>
-            <span>Password: <input></input></span> <br/>
-            <button>Login</button>
+            Username:<input value ={login} onChange ={loginFunction}/>
+			Password:<input value ={password} onChange = {passwordFunction} type = 'password'/>
+			<button>Login</button>
         </div>
     )
 }

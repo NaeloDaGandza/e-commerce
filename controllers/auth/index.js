@@ -8,15 +8,13 @@ const password1 = '123';
 const token = 'asdasd123123sadae12313ads';
 
 AuthCtrl.checkLoginStatus = () => {
-	setTimeout(() => {
-		const token = localStorage.getItem('token');
+	const token = localStorage.getItem('token');
 
-		if (token) {
-			store.dispatch(setLoggedIn(true));
-		} else {
-			store.dispatch(setLoggedIn(false));
-		}
-	}, []);
+	if (token) {
+		store.dispatch(setLoggedIn(true));
+	} else {
+		store.dispatch(setLoggedIn(false));
+	}
 };
 
 AuthCtrl.signIn = (username, password) => {

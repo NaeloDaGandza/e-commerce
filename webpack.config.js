@@ -34,5 +34,9 @@ module.exports = {
 	plugins: PLUGINS,
 	module: {
 		rules: LOADERS
+	},
+	devServer: {
+		port: 8080,
+		historyApiFallback: true
 	}
 }
