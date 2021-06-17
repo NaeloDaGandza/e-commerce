@@ -1,21 +1,29 @@
 body{
     background-attachment: fixed;
     color: white;
-    background-image:url(/src/img/background.png);
+    background-image: linear-gradient(rgb(207, 184, 184),rgb(49, 45, 45));
+    margin: 0;
+    
 }
 
 .header-div{
+    
     text-align: center;
-    margin: 0;
+    float: center;
+    margin-top: 0;
+    margin-bottom: 0;
     
 
 }
 .header-div h1{
+    display: flex;
     cursor: pointer;
     text-align: center;
-    margin: 0;
-    color: white;
-
+    margin-top: 0;
+    background-color: #000;
+    margin-bottom: 0;
+    padding-left: 10px;
+   
 }
 .header-div input{
     float: right;
@@ -24,27 +32,32 @@ body{
 }
 
 .menubar{
-    text-align: center;
+    text-align: left;
     border: none;
     padding: 0;
     display: flex;
-    justify-content: center;
-    margin-top: 5px;
-    margin-right: 5px;
+    justify-content: left;
+    margin-right: 0px;
     color: white;
+    margin-top: 0;
+    margin-bottom: 0;
+
     
 }
 .menubar ul{
-    list-style: none; 
-    display: flex;
     margin: 0;
-    
-    
+    display: flex;
+    list-style: none;                                                   
+    padding-top: 30px;
+    padding-left: 10px;
+    padding-bottom: 30px;
+    background-color: none;
+    border: 1px dotted red ;
 }
 
 .menubar ul li{
     cursor: pointer;
-    margin: 15px;
+    margin-right: 15px;
     list-style: none;
     text-decoration: none;
 }
@@ -56,3 +69,17 @@ a:link, a:visited, a:hover, a:active {
     color: white;
   }
   
+.prod{
+    display: flex;
+    margin: 5px;
+    background: none;
+    
+
+    
+}
+
+.product-description{
+    margin: 2px;
+    background:none;
+    color: #fff;
+}
