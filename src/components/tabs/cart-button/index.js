@@ -13,7 +13,7 @@ const CartButton = () => {
 	return (
 		<>
 			<Link to='/cart'>Cart</Link>
-			<span> {itemsCount}</span>
+			<span color = 'white'> ({itemsCount})</span>
 		</>
 	)
 };

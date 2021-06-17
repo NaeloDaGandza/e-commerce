@@ -1,7 +1,7 @@
 body{
     background-attachment: fixed;
     color: white;
-    background-image: linear-gradient(rgb(207, 184, 184),rgb(49, 45, 45));
+    background-image: linear-gradient(black,rgb(30, 30, 30));
     margin: 0;
     
 }
@@ -16,11 +16,11 @@ body{
 
 }
 .header-div h1{
-    display: flex;
+
     cursor: pointer;
     text-align: center;
     margin-top: 0;
-    background-color: #000;
+    background-color: rgb(30, 30, 30);
     margin-bottom: 0;
     padding-left: 10px;
    
@@ -32,15 +32,15 @@ body{
 }
 
 .menubar{
-    text-align: left;
-    border: none;
     padding: 0;
-    display: flex;
-    justify-content: left;
-    margin-right: 0px;
-    color: white;
+    border: none;
     margin-top: 0;
+    color: white;
+    display: flex;
     margin-bottom: 0;
+    margin-right: 0px;
+    text-align: center;
+    justify-content: center;
 
     
 }
@@ -51,8 +51,8 @@ body{
     padding-top: 30px;
     padding-left: 10px;
     padding-bottom: 30px;
-    background-color: none;
-    border: 1px dotted red ;
+    background-color: rgb(30, 30, 30);
+    
 }
 
 .menubar ul li{
@@ -73,13 +73,16 @@ a:link, a:visited, a:hover, a:active {
     display: flex;
     margin: 5px;
     background: none;
-    
-
-    
+    max-width: 400px;
 }
 
 .product-description{
     margin: 2px;
-    background:none;
+    background:rgb(30, 30, 30);
     color: #fff;
+
+}
+
+.product-description h4{
+  text-align: center;
 }

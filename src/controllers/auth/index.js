@@ -26,6 +26,10 @@ AuthCtrl.signIn = (username, password) => {
 		store.dispatch(setLoggedIn(true));
 	} else {
 		// TODO: Handle validations
+		AuthCtrl.signOut = () => {
+			localStorage.removeItem('token');
+			store.dispatch(setLoggedIn(false));
+		}
 		alert('Invalid username/password');
 	}
 };

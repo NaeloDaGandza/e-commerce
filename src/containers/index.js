@@ -11,7 +11,6 @@ import {useSelector} from 'react-redux';
 import Products from './home/products';
 import AboutUs from './home/about-us';
 import Cart from './home/cart';
-import SignOut from './components/signout/SignOut';
 
 const App = () => {
 

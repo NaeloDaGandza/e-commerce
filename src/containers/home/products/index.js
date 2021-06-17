@@ -24,7 +24,7 @@ const Products = () => {
 			{products.map(product => (
 				<div key={product.id} className ={'product-description'}>
 					<img src={product.imageUrl} width='400px' height='400px'/>
-					<h5>{product.title}</h5>
+					<h4>{product.title}</h4>
 					<p>{product.description}</p>
 					<button onClick={() => {
 						dispatch(addToCart(product))
