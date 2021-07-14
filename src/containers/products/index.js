@@ -21,15 +21,16 @@ const Products = () => {
 	}
 
 	return (
-		<div>
+		<div className = {'prod'}>
 			{products.map(product => (
-				<div key={product.id}>
-					<img src={product.imageUrl} width='100px' height='100px'/>
+				<div key={product.id} className = {'el'}>
+					<img src={product.imageUrl} width='7px' height='7px'/>
 					<h5>{product.title}</h5>
 					<p>{product.description}</p>
+					<p>price: {product.price}</p>
 					<button onClick={() => {
 						dispatch(addToCart(product))
-					}}>
+					}} className = {'prod-button'}>
 						Add to cart
 					</button>
 				</div>
