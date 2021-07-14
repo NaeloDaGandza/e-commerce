@@ -1,7 +1,7 @@
 body{
     background-attachment: fixed;
     color: white;
-    background-image: linear-gradient(black,rgb(30, 30, 30));
+    background-image: linear-gradient(rgb(255, 255, 255),rgb(30, 30, 30));
     margin: 0;
     padding: 0;
 }
@@ -11,6 +11,8 @@ body{
     float: center;
     margin-top: 0;
     margin-bottom: 0;
+    background: rgb(30, 30, 30);
+
     
 
 }
@@ -18,7 +20,7 @@ body{
     cursor: pointer;
     text-align: center;
     margin-top: 0;
-    background-color: rgb(30, 30, 30);
+    /* background-color: rgb(30, 30, 30); */
     margin-bottom: 0;
     padding-left: 10px;
    
@@ -35,11 +37,13 @@ body{
     border: none;
     margin-top: 0;
     color: white;
-    display: flex;
     margin-bottom: 0;
     margin-right: 0px;
     text-align: center;
-    justify-content: center;
+    display: flex;
+    justify-content: space-between;
+
+    
 }
 
 .menubar ul{
@@ -69,20 +73,23 @@ a:link, a:visited, a:hover, a:active {
 
 .prod {
     color: white;
-    background-color:rgb(32, 32, 32);
+    background-color:none;
     font-family: sans-serif;
     display: grid;
     grid-template-columns: repeat(auto-fit, 20%);
+    
+    
   }
   
   .el {
     padding: 1.5rem;
     background-color: dimgray;
     border: 1px darkgray solid;
+    
   }
 
 .prod img{
-    cursor: pointer;
+   
     
 }
 
@@ -91,15 +98,21 @@ a:link, a:visited, a:hover, a:active {
 }
 
 .product-description{
+    position: relative;
     display: flex;
     flex-direction: column;
-    margin: 2px;
     background:rgb(30, 30, 30);
     color: #fff;  
+    margin: 2px 20px 10px 0;
+    padding: 5px;
+    
 }
 
 .product-description h4{
   text-align: center;
+  position: relative;
+
+ 
 }
 
 .prod button{
@@ -112,6 +125,11 @@ a:link, a:visited, a:hover, a:active {
     text-decoration: none;
     display: inline-block;
     font-size: 16px;
+   
+    margin: 5px;
+    
+    top:0;
+    
 }
 
 .about-us{

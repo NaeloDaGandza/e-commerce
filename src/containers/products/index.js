@@ -27,7 +27,7 @@ const Products = () => {
 					<img src={product.imageUrl} width='7px' height='7px'/>
 					<h5>{product.title}</h5>
 					<p>{product.description}</p>
-					<p>price: {product.price}</p>
+					<p>{product.price}</p>
 					<button onClick={() => {
 						dispatch(addToCart(product))
 					}} className = {'prod-button'}>
