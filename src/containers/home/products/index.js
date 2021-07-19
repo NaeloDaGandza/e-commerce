@@ -20,7 +20,7 @@ const Products = () => {
 	}
 
 	return (
-		<div className='prod'>
+		<div className={'prod'}>
 			{products.map(product => (
 				<div key={product.id} className ={'product-description'}>
 					<img src={product.imageUrl} width='400px' height='400px'/>
@@ -28,8 +28,8 @@ const Products = () => {
 					<p>{product.description}</p>
 					<button onClick={() => {
 						dispatch(addToCart(product))
-					}}>
-						Add to cart
+					}} title = {'Add to cart'}>
+						
 					</button>
 				</div>
 			))}

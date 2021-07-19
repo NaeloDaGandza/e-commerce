@@ -3,7 +3,7 @@ import ProductsCtrl from '../../controllers/products';
 import {useDispatch, useSelector} from 'react-redux';
 import {addToCart} from '../../store/actions';
 import React, {useEffect} from 'react';
-
+// import icon from '../../img/carticon.png';
 const Products = () => {
 
 	const products = useSelector((state) => (
@@ -30,9 +30,9 @@ const Products = () => {
 					<p>{product.price}</p>
 					<button onClick={() => {
 						dispatch(addToCart(product))
-					}} className = {'prod-button'}>
-						Add to cart
+					}}>
 					</button>
+					
 				</div>
 			))}
 		</div>

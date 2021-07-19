@@ -45,6 +45,20 @@ const products = [
 		description: 'description 4',
 		imageUrl: 'https://lp2.hm.com/hmgoepprod?set=quality%5B79%5D%2Csource%5B%2F52%2F41%2F524154ed4440c6fa95df55a8c60f9894fe7d674d.jpg%5D%2Corigin%5Bdam%5D%2Ccategory%5Bmen_accessories_hatsandgloves%5D%2Ctype%5BDESCRIPTIVESTILLLIFE%5D%2Cres%5Bm%5D%2Chmver%5B1%5D&call=url[file:/product/main]',
 		price: '100$'
+	},
+	{
+		id: 7,
+		title: 'Hat',
+		description: 'description 4',
+		imageUrl: 'https://lp2.hm.com/hmgoepprod?set=quality%5B79%5D%2Csource%5B%2F52%2F41%2F524154ed4440c6fa95df55a8c60f9894fe7d674d.jpg%5D%2Corigin%5Bdam%5D%2Ccategory%5Bmen_accessories_hatsandgloves%5D%2Ctype%5BDESCRIPTIVESTILLLIFE%5D%2Cres%5Bm%5D%2Chmver%5B1%5D&call=url[file:/product/main]',
+		price: '100$'
+	},
+	{
+		id: 7,
+		title: 'Hat',
+		description: 'description 4',
+		imageUrl: 'https://lp2.hm.com/hmgoepprod?set=quality%5B79%5D%2Csource%5B%2F52%2F41%2F524154ed4440c6fa95df55a8c60f9894fe7d674d.jpg%5D%2Corigin%5Bdam%5D%2Ccategory%5Bmen_accessories_hatsandgloves%5D%2Ctype%5BDESCRIPTIVESTILLLIFE%5D%2Cres%5Bm%5D%2Chmver%5B1%5D&call=url[file:/product/main]',
+		price: '100$'
 	}
 ];
 
